@@ -4,7 +4,7 @@
 [![Coverage Status](https://coveralls.io/repos/pgaubatz/node-es6-promise-settle/badge.svg)](https://coveralls.io/r/pgaubatz/node-es6-promise-settle)
 [![Dependency Status](https://david-dm.org/pgaubatz/node-es6-promise-settle.svg)](https://david-dm.org/pgaubatz/node-es6-promise-settle)
 
-Promisify entire objects.  
+Promise.settle() for ES6-Promise.  
 
 ## Installation
 

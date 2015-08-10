@@ -1,7 +1,7 @@
 {
   "name": "es6-promise-settle",
   "version": "0.1.0",
-  "description": "Promisify entire objects",
+  "description": "Promise.settle() for ES6-Promise",
   "main": "index.js",
   "engines": {
     "node": ">= 0.10.0"
