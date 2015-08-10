@@ -1,0 +1,35 @@
+{
+  "name": "es6-promise-settle",
+  "version": "0.1.0",
+  "description": "Promisify entire objects",
+  "main": "index.js",
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "scripts": {
+    "test": "mocha -R spec test/",
+    "cover": "istanbul cover ./node_modules/mocha/bin/_mocha --report html -- -R spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pgaubatz/node-es6-promise-settle.git"
+  },
+  "keywords": [
+    "es6",
+    "promise",
+    "settle",
+    "Promise.settle"
+  ],
+  "author": "Patrick Gaubatz <patrick@gaubatz.at>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pgaubatz/node-es6-promise-settle/issues"
+  },
+  "homepage": "https://github.com/pgaubatz/node-es6-promise-settle#readme",
+  "dependencies": {
+    "es6-promise": "^2.3.0"
+  },
+  "devDependencies": {
+    "mocha": "^2.2.4"
+  }
+}
