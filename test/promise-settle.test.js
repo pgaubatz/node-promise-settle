@@ -52,6 +52,13 @@ describe('settle()', function () {
     );
   });
 
+  it('should reject if the input is not an array', function() {
+    return settle().catch(function(err) {
+      assert.ok(err instanceof TypeError);
+      assert.ok(err.message === 'Expected an array of Promises');
+    });
+  });
+
   it('should settle values', function () {
     var array = [0, 1, sentinel];
     return settle(array).then(function (settled) {
@@ -71,9 +78,11 @@ describe('settle()', function () {
 
       assert.equal(settled[1].isFulfilled(), true);
       assert.deepEqual(settled[1].value(), sentinel);
+      assert.throws(settled[1].reason, Error);
 
       assert.equal(settled[2].isRejected(), true);
       assert.deepEqual(settled[2].reason(), sentinel);
+      assert.throws(settled[2].value, Error);
     });
   });
 
