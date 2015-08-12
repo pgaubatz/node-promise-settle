@@ -26,10 +26,9 @@
     "url": "https://github.com/pgaubatz/node-es6-promise-settle/issues"
   },
   "homepage": "https://github.com/pgaubatz/node-es6-promise-settle#readme",
-  "dependencies": {
-    "es6-promise": "^3.0.2"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "mocha": "^2.2.4"
+    "mocha": "^2.2.4",
+    "native-promise-only": "^0.8.1"
   }
 }

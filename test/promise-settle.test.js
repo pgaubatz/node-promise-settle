@@ -27,15 +27,17 @@
 
 'use strict';
 
+require('native-promise-only'); // a promise polyfill
+
 var assert = require('assert');
 var settle = require('../lib/promise-settle');
 
 var sentinel = {};
 var other = {};
 
-describe('promiseSettle()', function () {
+describe('settle()', function () {
 
-  it('should settle empty array', function () {
+  it('should settle empty arrays', function () {
     return settle([]).then(function (settled) {
       assert.deepEqual(settled.length, 0);
     });
