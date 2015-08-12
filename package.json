@@ -1,7 +1,7 @@
 {
-  "name": "es6-promise-settle",
-  "version": "0.1.0",
-  "description": "Promise.settle() for ES6-Promise",
+  "name": "promise-settle",
+  "version": "0.2.0",
+  "description": "settle([...]) returns a Promise that is fulfilled when all items in the array are either fulfilled or rejected",
   "main": "index.js",
   "engines": {
     "node": ">= 0.10.0"
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pgaubatz/node-es6-promise-settle.git"
+    "url": "git+https://github.com/pgaubatz/node-promise-settle.git"
   },
   "keywords": [
     "es6",
@@ -23,9 +23,9 @@
   "author": "Patrick Gaubatz <patrick@gaubatz.at>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/pgaubatz/node-es6-promise-settle/issues"
+    "url": "https://github.com/pgaubatz/node-promise-settle/issues"
   },
-  "homepage": "https://github.com/pgaubatz/node-es6-promise-settle#readme",
+  "homepage": "https://github.com/pgaubatz/node-promise-settle#readme",
   "dependencies": {},
   "devDependencies": {
     "mocha": "^2.2.4",

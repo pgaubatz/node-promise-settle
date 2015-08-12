@@ -1,20 +1,20 @@
-# es6-promise-settle
-[![npm version](https://badge.fury.io/js/es6-promise-settle.svg)](http://badge.fury.io/js/es6-promise-settle)
-[![Build Status](https://travis-ci.org/pgaubatz/node-es6-promise-settle.svg?branch=master)](https://travis-ci.org/pgaubatz/node-es6-promise-settle)
-[![Coverage Status](https://coveralls.io/repos/pgaubatz/node-es6-promise-settle/badge.svg)](https://coveralls.io/r/pgaubatz/node-es6-promise-settle)
-[![Dependency Status](https://david-dm.org/pgaubatz/node-es6-promise-settle.svg)](https://david-dm.org/pgaubatz/node-es6-promise-settle)
+# promise-settle
+[![npm version](https://badge.fury.io/js/promise-settle.svg)](http://badge.fury.io/js/promise-settle)
+[![Build Status](https://travis-ci.org/pgaubatz/node-promise-settle.svg?branch=master)](https://travis-ci.org/pgaubatz/node-promise-settle)
+[![Coverage Status](https://coveralls.io/repos/pgaubatz/node-promise-settle/badge.svg)](https://coveralls.io/r/pgaubatz/node-promise-settle)
+[![Dependency Status](https://david-dm.org/pgaubatz/node-promise-settle.svg)](https://david-dm.org/pgaubatz/node-promise-settle)
 
-Promise.settle() for ES6-Promise.  
+settle([...]) returns a Promise that is fulfilled when all items in the array are either fulfilled or rejected.  
 
 ## Installation
 
-    npm install --save es6-promise-settle
+    npm install --save promise-settle
 
 ## Usage
 ```javascript
-var promiseSettle = require('es6-promise-settle');
+var settle = require('promise-settle');
 
-promiseSettle([true, Promise.resolve(3), Promise.reject(new Error('error'))])
+settle([true, Promise.resolve(3), Promise.reject(new Error('error'))])
   .then(function (results) {
     results.forEach(function (result) {
       if (result.isFulfilled()) {
