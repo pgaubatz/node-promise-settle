@@ -86,6 +86,18 @@ describe('settle()', function () {
     });
   });
 
+  it('issue #4', function () {
+    return settle([aPromiseMethod()]).then(function(results) {
+      assert.ok(results[0].isRejected());
+    });
+
+    function aPromiseMethod() {
+      return new Promise(function (resolve, reject) {
+        reject();
+      });
+    }
+  });
+
   //it('returned promise should fulfill once all inputs settle', function () {
   //  var array, p1, p2, resolve, reject;
   //
