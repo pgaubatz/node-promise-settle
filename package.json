@@ -1,6 +1,6 @@
 {
   "name": "promise-settle",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "settle([...]) returns a Promise that is fulfilled when all items in the array are either fulfilled or rejected",
   "main": "index.js",
   "engines": {
